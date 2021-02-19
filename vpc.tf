@@ -1,5 +1,5 @@
 resource "aws_vpc" "coreinfra_tf_vpc" {
-  cidr_block       = "190.160.0.0/16"
+  cidr_block       = var.vpc_cidr
   instance_tenancy = "default"
 
   tags = {
