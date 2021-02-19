@@ -7,7 +7,8 @@ variable "vpc_cidr" {
 }
 
 variable "subnet_cidr" {
-  default = "190.160.1.0/24"
+  type    = list(string)
+  default = ["190.160.1.0/24", "190.160.2.0/24", "190.160.3.0/24"]
 }
 
 variable "azs" {
