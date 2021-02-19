@@ -3,7 +3,7 @@ resource "aws_vpc" "coreinfra_tf_vpc" {
   instance_tenancy = "default"
 
   tags = {
-    Name     = "main"
+    Name     = "tf_main"
     Location = "Hackensack"
   }
 }

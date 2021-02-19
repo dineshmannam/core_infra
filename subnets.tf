@@ -3,6 +3,6 @@ resource "aws_subnet" "coreinfra_tf_subnet1" {
   cidr_block = "190.160.1.0/24"
 
   tags = {
-    Name = "subnet1"
+    Name = "tf_subnet1"
   }
 }
