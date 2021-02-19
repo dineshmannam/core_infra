@@ -4,6 +4,6 @@ resource "aws_subnet" "coreinfra_tf_subnets" {
   cidr_block = element(var.subnet_cidr, count.index)
 
   tags = {
-    Name = "tf_subnet"
+    Name = "tf_subnet-${count.index + 1}"
   }
 }
